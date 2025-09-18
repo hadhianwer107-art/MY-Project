@@ -1,0 +1,111 @@
+body { 
+        font-family: Arial, sans-serif; 
+        margin:0; 
+        padding:0; 
+        background-image: url(frontpage.jpg);
+        background-size:cover; 
+    }
+    header, footer { 
+        background: #f18e1c; 
+        color:white; 
+        text-align:center; 
+        padding:15px; 
+    }
+    nav a { 
+        color:white; 
+        margin:0 15px; 
+        text-decoration:none; 
+    }
+    .coach {
+    background:  #f18e1c;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    
+        
+}
+.seats{
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top:20px ;
+    
+}
+.seat{
+    position: relative ;
+}
+.seat input{
+    display:none ;
+    
+}
+.seat label{
+    display: block;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: transparent;
+    transition: 0.3s;
+
+}
+.seat input:checked + label{
+    background: rgb(0, 0, 2);
+    border-color: rgb(0, 0, 2);
+    color: white;
+}
+.booked label{
+    color: black;
+    background: white;
+    cursor: not-allowed;
+}
+.field{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.field span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    display: inline-block;
+}
+.available{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.bookedbox{
+    background: white;
+}
+.selected{
+    background: rgb(0, 0, 2);
+}
+.navigation{
+    margin-top: 20px;
+    text-align: center;
+}
+.navigation .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #293b52;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.navigation .btn:hover{
+    background: #81b6ef;}
+.container{
+    text-align: center;
+}

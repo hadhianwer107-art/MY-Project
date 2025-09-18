@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif;
+        margin:0;padding:0;
+        background-image: url(frontpage.jpg);
+        background-size:cover; 
+    }
+    header, footer { 
+        background:#f18628;; 
+        color:white; 
+        text-align:center; 
+        padding:15px; 
+      }
+    nav a { 
+      color:white; 
+      margin:0 15px; 
+      text-decoration:none; 
+    }
+    .container { max-width:500px; 
+      margin:40px auto; 
+      padding:20px; 
+      background:#fff; 
+      border-radius:10px; 
+      box-shadow:0 4px 8px rgba(0,0,0,0.2); 
+    }
+    h2 { margin-bottom:20px; 
+      text-align:center; 
+    }
+    .summary { 
+      margin-bottom:20px; 
+    }
+    label { 
+      display:block; 
+      margin-top:10px; 
+      font-weight:bold; 
+    }
+    input[type=radio] { 
+      margin-right:8px; 
+    }
+    button { margin-top:20px; 
+      width:100%; 
+      padding:12px; 
+      background :#f18628;; 
+      color:#fff; 
+      border:none; 
+      border-radius:6px; 
+      cursor:pointer; 
+    }
+    button:hover { background:#f18628;; }
+    .thankyou { display:none; 
+      text-align:center; 
+      margin-top:20px; 
+      font-size:18px; 
+      color:green; 
+      font-weight:bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Train Booking System</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="details.html">Train Details</a>
+      <a href="seats.html">Seats</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Payment</h2>
+    <div class="summary">
+      <p><b>Route:</b> </p>
+      <p><b>Date:</b> </p>
+      <p><b>Seats:</b></p>
+      <p><b>Fare:</b></p>
+    </div>
+    <form onsubmit="document.getElementById('ty').style.display='block'; return false;">
+      <label><input type="radio" name="pay" required> UPI</label>
+      <label><input type="radio" name="pay"> Debit/Credit Card</label>
+      <label><input type="radio" name="pay"> Net Banking</label>
+      <button type="submit">Pay Now</button>
+    </form>
+    <div id="ty" class="thankyou">✅ Thank you! Your booking is confirmed.</div>
+  </div>
+
+ 
+</body>
+</html>
